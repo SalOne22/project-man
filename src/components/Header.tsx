@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTransition, animated } from '@react-spring/web';
-import { Search } from 'lucide-react';
+import { Search, Menu } from 'lucide-react';
 import { ReactComponent as Logo } from 'assets/logo.svg';
 
 export const Header = () => {
@@ -23,12 +23,20 @@ export const Header = () => {
 
   return (
     <header className="navbar bg-base-200">
-      <Link to="/" className="btn btn-ghost normal-case text-xl">
-        <Logo width="1em" height="1em" />
-        <h1>Project Man</h1>
-      </Link>
+      <div className="navbar-start sm:hidden">
+        <label htmlFor="navigation" className="btn btn-ghost drawer-button">
+          <Menu />
+        </label>
+      </div>
 
-      <div className="ml-auto">
+      <div className="navbar-center sm:navbar-start">
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          <Logo width="1em" height="1em" />
+          <h1>Project Man</h1>
+        </Link>
+      </div>
+
+      <div className="navbar-end">
         {searchTransition(
           (style, item) =>
             item && (
