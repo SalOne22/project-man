@@ -10,7 +10,7 @@ import {
 
 export const NavigationBar = () => {
   return (
-    <aside className="drawer-side overflow-visible">
+    <aside className="drawer-side overflow-visible z-20">
       <label htmlFor="navigation" className="drawer-overlay"></label>
       <nav className="p-1 h-full bg-base-300">
         <ul className="menu gap-1">
