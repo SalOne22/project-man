@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import bgSmall from 'assets/images/404/bg-mobile.jpg';
 import bgMedium from 'assets/images/404/bg-tablet.jpg';
 import bgLarge from 'assets/images/404/bg-desktop.jpg';
-import bgUltraWide from 'assets/images/404/bg-ultrawide.jpg';
+import bgUltraWide from 'assets/images/404/bg-ultra-wide.jpg';
 
 export const NotFound = () => {
   return (
@@ -16,8 +16,7 @@ export const NotFound = () => {
         width={2400}
         height={725}
         alt="Mountains on sunset"
-        className="w-full max-w-[2400px] max-h-[725px]
-        object-cover h-screen"
+        className="w-full max-w-[2400px] h-[725px] object-cover"
       />
       <div
         style={{
