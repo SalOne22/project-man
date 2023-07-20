@@ -44,7 +44,7 @@ export const Header = () => {
                 style={style}
                 placeholder="Search..."
                 className="input input-bordered input-sm mr-4
-                absolute right-0 top-20 sm:top-0 sm:relative"
+                absolute right-0 top-20 sm:top-0 sm:relative z-10"
               />
             )
         )}
