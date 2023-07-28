@@ -2,7 +2,7 @@ export const UserProfile = () => {
   return (
     <div className="flex">
       <div className="avatar mr-4">
-        <div className="w-24 rounded-full">
+        <div className="w-24 h-24 rounded-full">
           <img
             src="https://placehold.co/96"
             alt="User avatar"
@@ -14,7 +14,7 @@ export const UserProfile = () => {
       <div>
         <h2 className="text-stone-100 text-4xl mb-1">username</h2>
         <a href="mailto:user@example.com">user@example.com</a>
-        <div className="flex gap-2 mt-2">
+        <div className="flex gap-2 mt-2 flex-wrap">
           <p className="badge badge-neutral">Projects: 5</p>
           <p className="badge badge-primary">Assigned: 23</p>
         </div>
