@@ -1,3 +1,5 @@
+import { QuickTaskModal } from 'components/QuickTaskModal';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export type ProjectItemProps = {
@@ -8,6 +10,7 @@ export type ProjectItemProps = {
   status: string;
   startDate: string;
   endDate?: string | null;
+  showQuickTask?: boolean;
 };
 
 export const ProjectItem = ({
@@ -18,8 +21,12 @@ export const ProjectItem = ({
   status,
   startDate,
   endDate,
+  showQuickTask,
 }: ProjectItemProps) => {
+  const [isQuickTaskOpen, setIsQuickTaskOpen] = useState(false);
+
   let statusClass;
+
   switch (status.toLowerCase()) {
     case 'in progress':
       statusClass = 'badge-primary';
@@ -54,12 +61,23 @@ export const ProjectItem = ({
         <p>
           {startDate} - {endDate ?? 'now'}
         </p>
-        <button
-          type="button"
-          className="btn btn-sm btn-outline btn-success ml-auto"
-        >
-          Add task
-        </button>
+        {showQuickTask && (
+          <>
+            <button
+              onClick={() => setIsQuickTaskOpen(true)}
+              type="button"
+              className="btn btn-sm btn-outline btn-success ml-auto"
+            >
+              Add task
+            </button>
+
+            <QuickTaskModal
+              title={name}
+              open={isQuickTaskOpen}
+              onClose={() => setIsQuickTaskOpen(false)}
+            />
+          </>
+        )}
       </div>
     </li>
   );
