@@ -1,7 +1,6 @@
 import { createPortal } from 'react-dom';
 import { nanoid } from 'nanoid';
 import { Modal } from 'components/Modal';
-import 'react-datepicker/dist/react-datepicker.css';
 
 type Props = {
   title: string;
