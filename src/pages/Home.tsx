@@ -2,7 +2,7 @@ import { ProjectList } from 'components/ProjectList';
 import { UserProfile } from 'components/UserProfile';
 import projects from 'assets/exampleProjects.json';
 
-export const Home = () => {
+const Home = () => {
   return (
     <section className="py-8 px-6 flex flex-col items-center sm:items-start">
       <div className="mb-8">
@@ -12,3 +12,5 @@ export const Home = () => {
     </section>
   );
 };
+
+export default Home;

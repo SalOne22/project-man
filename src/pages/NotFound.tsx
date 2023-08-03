@@ -4,7 +4,7 @@ import bgMedium from 'assets/images/404/bg-tablet.jpg';
 import bgLarge from 'assets/images/404/bg-desktop.jpg';
 import bgUltraWide from 'assets/images/404/bg-ultra-wide.jpg';
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
     <section className="relative">
       <img
@@ -38,3 +38,5 @@ export const NotFound = () => {
     </section>
   );
 };
+
+export default NotFound;
