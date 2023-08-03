@@ -54,12 +54,13 @@ export const QuickTaskModal = ({ title, open, onClose }: Props) => {
           <span className="label-text">Priority</span>
         </label>
         <select
+          defaultValue="medium"
           id={prioritySelectId}
           className="select select-bordered select-sm mb-8"
         >
-          <option>Low</option>
-          <option selected>Medium</option>
-          <option>High</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
         </select>
 
         <button className="btn btn-success btn-sm">Add</button>
