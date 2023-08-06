@@ -1,4 +1,4 @@
-import { QuickTaskModal } from 'components/QuickTaskModal';
+import { QuickTaskModal } from '../QuickTaskModal';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

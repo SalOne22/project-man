@@ -1,6 +1,6 @@
 import { createPortal } from 'react-dom';
 import { nanoid } from 'nanoid';
-import { Modal } from 'components/Modal';
+import { Modal } from './Modal';
 
 type Props = {
   title: string;

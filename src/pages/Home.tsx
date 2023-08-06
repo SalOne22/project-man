@@ -1,6 +1,6 @@
-import { ProjectList } from 'components/ProjectList';
-import { UserProfile } from 'components/UserProfile';
-import projects from 'assets/exampleProjects.json';
+import { ProjectList } from '../components/ProjectList';
+import { UserProfile } from '../components/UserProfile';
+import projects from '../assets/exampleProjects.json';
 
 const Home = () => {
   return (

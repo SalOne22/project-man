@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout';
 import { FullLoader } from './FullLoader';
 
-const Home = lazy(() => import('pages/Home'));
-const NotFound = lazy(() => import('pages/NotFound'));
+const Home = lazy(() => import('../pages/Home'));
+const NotFound = lazy(() => import('../pages/NotFound'));
 
 export const App = () => {
   return (
