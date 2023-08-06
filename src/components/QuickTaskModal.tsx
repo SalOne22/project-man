@@ -1,4 +1,3 @@
-import { createPortal } from 'react-dom';
 import { nanoid } from 'nanoid';
 import { Modal } from './Modal';
 
@@ -14,7 +13,7 @@ export const QuickTaskModal = ({ title, open, onClose }: Props) => {
   const dateInputId = nanoid();
   const prioritySelectId = nanoid();
 
-  return createPortal(
+  return (
     <Modal open={open} onClose={onClose}>
       <button
         onClick={onClose}
@@ -65,7 +64,6 @@ export const QuickTaskModal = ({ title, open, onClose }: Props) => {
 
         <button className="btn btn-success btn-sm">Add</button>
       </form>
-    </Modal>,
-    document.getElementById('modals')!
+    </Modal>
   );
 };

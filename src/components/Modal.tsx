@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { createPortal } from 'react-dom';
 
 type Props = {
   children: React.ReactNode;
@@ -12,7 +13,7 @@ export const Modal = ({ children, open, onClose }: Props) => {
     open && 'modal-open'
   );
 
-  return (
+  return createPortal(
     <div className={modalClasses}>
       <div className="modal-box overflow-x-visible">{children}</div>
       <div className="modal-backdrop">
@@ -20,6 +21,9 @@ export const Modal = ({ children, open, onClose }: Props) => {
           Close
         </button>
       </div>
-    </div>
+    </div>,
+    //? div with id modals always in index.html
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    document.getElementById('modals')!
   );
 };
