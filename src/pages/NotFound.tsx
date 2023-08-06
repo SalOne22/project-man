@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import bgSmall from 'assets/images/404/bg-mobile.jpg';
-import bgMedium from 'assets/images/404/bg-tablet.jpg';
-import bgLarge from 'assets/images/404/bg-desktop.jpg';
-import bgUltraWide from 'assets/images/404/bg-ultra-wide.jpg';
+import bgSmall from '../assets/images/404/bg-mobile.jpg';
+import bgMedium from '../assets/images/404/bg-tablet.jpg';
+import bgLarge from '../assets/images/404/bg-desktop.jpg';
+import bgUltraWide from '../assets/images/404/bg-ultra-wide.jpg';
 
 const NotFound = () => {
   return (
