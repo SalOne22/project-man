@@ -1,5 +1,5 @@
 import project from '~/mock/full-project.json';
 
 export default function ProjectOverview() {
-  return <div>ProjectOverview</div>;
+  return <div>Project overview</div>;
 }
