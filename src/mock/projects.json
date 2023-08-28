@@ -13,7 +13,7 @@
       "MongoDB"
     ],
     "status": "In Progress",
-    "tasksCompleted": 8,
+    "completedTasks": 8,
     "totalTasks": 12,
     "startDate": "2023-02-15",
     "endDate": null
@@ -24,7 +24,7 @@
     "description": "A cross-platform mobile app for task management and collaboration.",
     "technologies": ["React Native", "JavaScript", "Firebase", "Redux"],
     "status": "Completed",
-    "tasksCompleted": 15,
+    "completedTasks": 15,
     "totalTasks": 15,
     "startDate": "2022-09-01",
     "endDate": "2023-01-10"
@@ -42,7 +42,7 @@
       "SQLite"
     ],
     "status": "On Hold",
-    "tasksCompleted": 5,
+    "completedTasks": 5,
     "totalTasks": 10,
     "startDate": "2023-04-20",
     "endDate": null
@@ -53,7 +53,7 @@
     "description": "A personal portfolio website showcasing projects, skills, and contact information.",
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
     "status": "Completed",
-    "tasksCompleted": 7,
+    "completedTasks": 7,
     "totalTasks": 7,
     "startDate": "2023-03-10",
     "endDate": "2023-03-25"
@@ -64,7 +64,7 @@
     "description": "A 2D platformer game with multiple levels and interactive gameplay.",
     "technologies": ["Unity", "C#", "Photoshop"],
     "status": "In Progress",
-    "tasksCompleted": 3,
+    "completedTasks": 3,
     "totalTasks": 10,
     "startDate": "2023-06-15",
     "endDate": null
