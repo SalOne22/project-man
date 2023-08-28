@@ -6,7 +6,7 @@ export const UserProfile = () => {
       <div className="avatar mr-4">
         <div className="w-24 h-24 rounded-full bg-slate-400">
           <Image
-            src="https://placehold.co/96"
+            src="https://images.unsplash.com/photo-1692794180903-492910e2c5a4"
             alt="User avatar"
             width={96}
             height={96}
