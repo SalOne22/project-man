@@ -1,20 +1,14 @@
+import Image from 'next/image';
 import { Link } from 'react-router-dom';
-import bgSmall from '../assets/images/404/bg-mobile.jpg';
-import bgMedium from '../assets/images/404/bg-tablet.jpg';
-import bgLarge from '../assets/images/404/bg-desktop.jpg';
-import bgUltraWide from '../assets/images/404/bg-ultra-wide.jpg';
+import bg from '../assets/images/404/bg-ultra-wide.jpg';
 
 const NotFound = () => {
   return (
     <section className="relative">
-      <img
-        srcSet={`${bgSmall} 640w, ${bgMedium} 768w, ${bgLarge} 1440w,
-        ${bgUltraWide} 2400w`}
+      <Image
         sizes="(max-width: 640px) 640px, (max-width: 768px) 768px,
         (max-width: 1440px) 1440px, 2400px"
-        src={bgMedium}
-        width={2400}
-        height={725}
+        src={bg}
         alt="Mountains on sunset"
         className="w-full max-w-[2400px] h-[725px] object-cover"
       />

@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTransition, animated } from '@react-spring/web';
 import { Search, Menu } from 'lucide-react';
-import LogoUrl from '../assets/logo.svg';
+
+import Logo from '../assets/logo.svg';
+import Image from 'next/image';
 
 export const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -31,8 +33,8 @@ export const Header = () => {
 
       <div className="navbar-center sm:navbar-start">
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          <img
-            src={LogoUrl}
+          <Image
+            src={Logo}
             alt="Logo"
             width={20}
             height={20}

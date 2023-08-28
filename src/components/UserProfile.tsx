@@ -1,9 +1,11 @@
+import Image from 'next/image';
+
 export const UserProfile = () => {
   return (
     <div className="flex">
       <div className="avatar mr-4">
         <div className="w-24 h-24 rounded-full">
-          <img
+          <Image
             src="https://placehold.co/96"
             alt="User avatar"
             width={96}
