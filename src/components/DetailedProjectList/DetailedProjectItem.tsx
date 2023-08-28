@@ -43,7 +43,11 @@ export const DetailedProjectItem = ({
   }
 
   return (
-    <div className="card bg-base-200 shadow-xl p-4">
+    <div
+      className="card bg-base-200 shadow-xl p-4
+      hover:shadow-primary/10 hover:shadow-2xl transition-shadow
+      duration-700 ease-in-out"
+    >
       <h3 className="font-bold text-2xl flex flex-wrap items-start justify-between mb-4">
         <Link href={`/projects/${id}`}>{name}</Link>
         <span className={`badge ${statusClass}`}>{status}</span>
