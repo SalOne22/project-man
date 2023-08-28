@@ -1,0 +1,105 @@
+{
+  "id": 1,
+  "name": "E-commerce Website",
+  "description": "A fully functional e-commerce website with product listings, shopping cart, and payment gateway integration.",
+  "technologies": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB"
+  ],
+  "status": "In Progress",
+  "startDate": "2023-07-01",
+  "endDate": null,
+  "owner": "John Doe",
+  "teamMembers": ["Jane Smith", "Alice Johnson", "Bob Williams"],
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Task 1",
+      "description": "Task description here.",
+      "assignee": "Jane Smith",
+      "dueDate": "2023-08-15",
+      "status": "In Progress"
+    },
+    {
+      "id": 2,
+      "name": "Task 2",
+      "description": "Task description here.",
+      "assignee": "Alice Johnson",
+      "dueDate": "2023-09-30",
+      "status": "Not Started"
+    },
+    {
+      "id": 3,
+      "name": "Task 3",
+      "description": "Task description here.",
+      "assignee": "Bob Williams",
+      "dueDate": "2023-10-15",
+      "status": "Completed"
+    }
+  ],
+  "files": [
+    {
+      "id": 1,
+      "name": "Document.pdf",
+      "size": "2.5 MB",
+      "uploadDate": "2023-07-10",
+      "uploader": "Jane Smith"
+    },
+    {
+      "id": 2,
+      "name": "Presentation.pptx",
+      "size": "4.8 MB",
+      "uploadDate": "2023-07-15",
+      "uploader": "Alice Johnson"
+    }
+  ],
+  "discussions": [
+    {
+      "id": 1,
+      "author": "John Doe",
+      "timestamp": "2023-07-12 10:30 AM",
+      "message": "Let's discuss the project kickoff meeting."
+    },
+    {
+      "id": 2,
+      "author": "Jane Smith",
+      "timestamp": "2023-07-14 02:15 PM",
+      "message": "I've uploaded the initial design files."
+    }
+  ],
+  "milestones": [
+    {
+      "id": 1,
+      "title": "Design Phase Completed",
+      "description": "All design tasks and assets finalized.",
+      "dueDate": "2023-08-31",
+      "tasks": [1, 2]
+    },
+    {
+      "id": 2,
+      "title": "Development Phase Started",
+      "description": "Coding and development work begins.",
+      "dueDate": "2023-09-15",
+      "tasks": [3]
+    }
+  ],
+  "calendar": [
+    {
+      "id": 1,
+      "title": "Project Kickoff Meeting",
+      "date": "2023-07-20",
+      "time": "09:00 AM"
+    },
+    {
+      "id": 2,
+      "title": "Design Review",
+      "date": "2023-08-25",
+      "time": "02:00 PM"
+    }
+  ]
+}
