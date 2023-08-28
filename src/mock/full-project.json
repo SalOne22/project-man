@@ -12,6 +12,8 @@
     "MongoDB"
   ],
   "status": "In Progress",
+  "completedTasks": 8,
+  "totalTasks": 12,
   "startDate": "2023-07-01",
   "endDate": null,
   "owner": "John Doe",
