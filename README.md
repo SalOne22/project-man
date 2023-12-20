@@ -2,4 +2,4 @@
 
 Project managment system
 
-❗❗❗ Work in progress
+❗❗❗ Work on this project is suspended
